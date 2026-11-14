@@ -1,0 +1,15 @@
+{
+  "name": "khrushchevki85",
+  "version": "1.0.0",
+  "description": "Хрущёвки-85",
+  "main": "main.js",
+  "scripts": {"start": "electron .", "dist": "electron-builder --win portable"},
+  "devDependencies": {"electron": "^31.0.0", "electron-builder": "^24.13.3"},
+  "build": {
+    "appId": "ru.khrushchevki.game",
+    "productName": "Khrushchevki85",
+    "files": ["main.js", "index.html", "style.css", "script.js"],
+    "win": {"target": "portable"},
+    "portable": {"artifactName": "Khrushchevki85.exe"}
+  }
+}
